@@ -40,12 +40,17 @@
 
 .hero-container {
     display: flex;
+    height: 89vh;
 }
 
 .hero-text-container {
     width: 70vw;
-    padding-left: 7vw;
-    padding-top: 15vh;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15vh;
+    padding-bottom: 5vh;
 }
 
 
@@ -78,13 +83,12 @@
 
 .hero-dog {
     position: absolute;
-    height: 83vh;
+    height: 38rem; 
     margin-left: 50vw;
-    margin-top: 6vh;
     z-index: 3;
     flex-shrink: 0;
     max-width: 100%;
-
+    
 
 }
 
@@ -92,7 +96,7 @@
     position: relative;
     z-index: 2;
 
-    height: 89vh;
+    height: 38.8rem;
 }
 
 .hero-button {
@@ -127,7 +131,7 @@
 }
 
 .hero-button-ghost:hover {
-    background-color: #e6c35d;
+    background-color: #F3F0EB;
 }
   
 
