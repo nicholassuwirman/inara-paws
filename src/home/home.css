@@ -1,0 +1,135 @@
+.home-container {
+    background-color: #F3F0EB;
+    width: 100%;
+    height: 200vh;
+    
+}
+
+.navbar-container {
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navbar-logo {
+    height: 55px;
+}
+
+.navbar-black-line {
+    margin-left: 5rem; /* 'ml-20' */
+    margin-top: 11px; /* 'mt-[11px]' */
+    width: 91.5%; /* 'w-[91%]' */
+    border-bottom: 2px solid black; /* 'border-b-2 border-[#F9F7F7]' */
+    height: 4px; /* 'h-[4px]' */
+    position: relative; /* 'relative' */
+}
+
+.navbar-links {
+    display: flex;
+    padding-top: 2vh;
+}
+
+.navbar-links-text {
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: 3vw;
+}
+
+.hero-container {
+    display: flex;
+}
+
+.hero-text-container {
+    width: 70vw;
+    padding-left: 7vw;
+    padding-top: 15vh;
+}
+
+
+
+.hero-text-title {
+    font-size: 1.5rem; /* Larger font size for the title */
+    font-family: 'Montserrat';
+    font-weight: 700; /* Bold font */
+    color: #333; /* Dark color for the title */
+}
+
+/* Brand Name Styling */
+.hero-text-inara-text {
+    font-family: 'Montserrat';
+
+    font-size: 6rem; /* Larger font size for the brand name */
+    font-weight: 600; /* Semi-bold font */
+    margin: 20px 0; /* Space between title and brand name */
+    color: #000000; /* Dark color for the brand name */
+}
+
+/* Description Styling */
+.hero-text-description {
+    font-family: 'Montserrat';
+
+    font-size: 1.25rem; /* Medium font size for the description */
+    font-weight: 500; /* Normal font weight */
+    margin: 10px 0; /* Space above and below */
+    color: #1f2027; /* Lighter color for description */
+    margin-right: 10vw;
+}
+
+.hero-dog {
+    position: absolute;
+    height: 83vh;
+    margin-left: 50vw;
+    margin-top: 6vh;
+    z-index: 3;
+    flex-shrink: 0;
+    max-width: 100%;
+
+
+}
+
+.hero-grid {
+    position: relative;
+    z-index: 2;
+
+    height: 89vh;
+}
+
+.hero-button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EBCA67;
+    color: #000000;
+    padding: 16px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+  }
+  
+  .hero-button:hover {
+    background-color: #e6c35d;
+  }
+  
+  .hero-button-ghost {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    padding: 16px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #000000; 
+}
+
+  .hero-button-ghost:hover {
+    background-color: #e6c35d;
+  }
+  
