@@ -25,15 +25,18 @@ const Home = () => {
 
         <div className='hero-container'>
             <div className='hero-text-container'>
+                <p className='hero-text-description'>Kalung peliharaan NFC</p>
                 <p className='hero-text-inara-text'>Inara Paws</p>
-                <p className='hero-text-description'>Kalung NFC untuk hewan peliharaan yang menyimpan informasi penting dan kenangan berharga</p>
+                <p className='hero-text-description'>Teknologi canggih untuk hewan peliharaan yang menyimpan informasi penting dan kenangan berharga</p>
                 <div>
                     <button className="hero-button">Beli Inara Paws</button>
                     <button className="hero-button-ghost">Pelajari Lebih Lanjut</button>
                 </div>
             </div>
-            <img className='hero-dog' src={heroDog2}></img>
-            <img className='hero-grid' src={heroGrid}></img>
+            <div className='hero-image-container'>
+                <img className='hero-dog' src={heroDog2} />
+                <img className='hero-grid' src={heroGrid} />
+            </div>
 
         </div>
 
@@ -59,6 +62,11 @@ const Home = () => {
                 <div className='features-div'>
                     <p className='features-text'>NFC</p>
                     <img className='features-image' src={featuresNfc}></img>
+                    <p className='features-description'>Mudah diakses kapan saja dengan website kami</p>
+                </div>
+                <div className='features-div'>
+                    <p className='features-text'>Kapsul Waktu</p>
+                    <img className='features-image' src={featuresTime}></img>
                     <p className='features-description'>Mudah diakses kapan saja dengan website kami</p>
                 </div>
                 <div className='features-div'>
