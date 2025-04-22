@@ -1,4 +1,11 @@
 import React from 'react';
+import { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
+
 import './home.css'; 
 import inaraLogo from '../assets/inara-logo.png'; 
 import heroDog from '../assets/hero-dog.png'; 
@@ -18,16 +25,29 @@ import testi1 from '../assets/testi1.jpg';
 import testi2 from '../assets/testi2.jpg'; 
 import testi3 from '../assets/testi3.jpg'; 
 
+import instagramLogo from '../assets/instagram_.png'; 
+import tiktokLogo from '../assets/tiktok_.png'; 
+import shopeeLogo from '../assets/shopee_.png'; 
+
 const Home = () => {
   return (
     <div className='home-container'>
         <div className='navbar-container'>
             <img className='navbar-logo' src={inaraLogo}></img>
             <div className='navbar-links'>
-                <p className='navbar-links-text'>Tentang Kami</p>
-                <p className='navbar-links-text'>Produk</p>
-                <p className='navbar-links-text'>Testimonial</p>
-                <p className='navbar-links-text'>Beli Produk</p>
+              <a href="#tentang-kami" className='navbar-links-text'>Tentang Kami</a>
+              <a href="#fitur" className='navbar-links-text'>Fitur</a>
+              <a href="#produk" className='navbar-links-text'>Produk</a>
+              <a href="#testimonial" className='navbar-links-text'>Testimonial</a>
+              <a 
+                href="s.shopee.co.id/6fTyWsSqE4" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className='navbar-links-text'
+              >
+                Beli Produk
+              </a>
+
             </div>
         </div>
         <div class="navbar-black-line "></div>
@@ -49,7 +69,7 @@ const Home = () => {
 
         </div>
 
-        <div className='description-container'>
+        <div id="tentang-kami" className='description-container'>
             <img className='description-image' src={descriptionImage}></img>
             <div className='description-text-container'>
                 <p className='description-title'>
@@ -60,7 +80,7 @@ const Home = () => {
             </div>
         </div>
 
-        <div className='features-container'>
+        <div id="fitur" className='features-container'>
             <p className='features-title'>Fitur Inara Paws</p>
             <div className='features-logos-container'>
                 <div className='features-div'>
@@ -86,7 +106,7 @@ const Home = () => {
             </div>
         </div>
 
-        <div className="nfc-device-viewer">
+        <div id="produk" className="nfc-device-viewer">
             <img className="nfc-device" src={inaraDevice} alt="NFC Device" />
 
             <img className='arrow-left' src={arrowLeft} alt="Previous" />
@@ -98,9 +118,9 @@ const Home = () => {
             
         </div>
 
-        <div className='testimonial-container'>
-      <h2 className='testimonial-title'>Apa yang Klien Kami Katakan</h2>
-      <div className='testimonial-grid'>
+      <div id="testimonial" className='testimonial-container'>
+        <h2 className='testimonial-title'>Apa yang Klien Kami Katakan</h2>
+        <div className='testimonial-grid'>
         {/* Testimonial 1 */}
         <div className='testimonial-card'>
           <div className='testimonial-content'>
@@ -133,6 +153,46 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div className='footer-container'>
+      <div className='footer-div-1'>
+        <img className='logo-footer' src={inaraLogo}></img>
+        <p className='footer-logo-description-title'>Inara Paws</p>
+        <p className='footer-logo-description'>Kalung NFC untuk hewan kesayangan anda</p>
+      </div>
+      <div className='footer-links-container'>
+        <p className='footer-links-text-header'>Links</p>
+        <a href="#tentang-kami" className='footer-links-text'>Tentang Kami</a>
+        <a href="#fitur" className='footer-links-text'>Fitur</a>
+        <a href="#produk" className='footer-links-text'>Produk</a>
+        
+      </div>
+      <div className='footer-links-container-2'>
+        
+        <a href="#testimonial" className='footer-links-text'>Testimonial</a>
+        <a 
+          href="s.shopee.co.id/6fTyWsSqE4" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className='navbar-links-text-beli'
+        >
+          Beli Produk
+        </a>
+      </div>
+        
+      <div className='footer-shops-container'>
+        <p className='footer-links-text-header'>Social Media</p>
+        <a href="https://www.tiktok.com/@inarapaws?_t=ZS-8vkOQT0UbId&_r=1" target="_blank" rel="noopener noreferrer">
+          <img className='footer-shops-image' src={tiktokLogo} alt="TikTok" />
+        </a>
+        <a href="https://www.instagram.com/inarapaws.id?igsh=N2lsNDlteWRycXZk" target="_blank" rel="noopener noreferrer">
+          <img className='footer-shops-image' src={instagramLogo} alt="Instagram" />
+        </a>
+        <a href="s.shopee.co.id/6fTyWsSqE4" target="_blank" rel="noopener noreferrer">
+          <img className='footer-shops-image' src={shopeeLogo} alt="Shopee" />
+        </a>
       </div>
     </div>
     </div>

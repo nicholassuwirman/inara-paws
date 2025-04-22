@@ -2,7 +2,17 @@
     background-color: #F3F0EB;
     width: 100%;
 }
+a {
+  text-decoration: none; /* removes underline */
+  color: inherit; /* inherits text color from parent (instead of blue) */
+}
 
+a:hover {
+  text-decoration: none; /* optional: keep no underline on hover */
+}
+html {
+  scroll-behavior: smooth;
+}
 .navbar-container {
     padding-left: 7vw;
     padding-right: 7vw;
@@ -39,7 +49,6 @@
 
 .hero-container {
     display: flex;
-    height: 89vh;
 }
 
 .hero-text-container {
@@ -269,7 +278,8 @@
     max-width: 800px; /* adjust as needed */
     margin: 0 auto;
     padding: 20px 60px; /* space for arrows */
-    height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
   }
   
   .nfc-device {
@@ -324,8 +334,8 @@
 
   .arrow-left {
     position: absolute;
-    left: -160px;
-    bottom: 35vh;
+    left: -150px;
+    bottom: 22vh;
     z-index: 10;
   }
 
@@ -340,7 +350,8 @@
     position: absolute;
     font-size: 1.7rem;
     left: -280px;
-    bottom: 210px;
+    bottom: 17vh;
+    font-weight: 500;
 
   }
 
@@ -349,11 +360,13 @@
     position: absolute;
     font-size: 1.7rem;
     right: -220px;
-    bottom: 260px;
+    font-weight: 500;
+    bottom: 27vh;
   }
 
   .testimonial-container {
-    height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
   }
 
   .testimonial-container {
@@ -425,7 +438,96 @@
   .testimonial-name {
     font-family: 'Montserrat';
   }
+
+  .footer-container {
+    padding-top: 10vh;
+    padding-bottom: 8vh;
+    background-color: #f3e4ca;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 3vh;
+    display: flex;
+  }
   
+.logo-footer {
+  height: 60px;
+}
+
+.footer-div-1 {
+  width: 25vw;
+}
+
+.footer-logo-description {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  margin-top: 2vh;
+}
+
+.footer-logo-description-title {
+  margin-top: 1vh;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.footer-links-text {
+  font-family: 'Montserrat';
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 2vh;
+    transition: transform 0.3s ease; /* Smooth transition */
+
+}
+.footer-links-text:hover {
+  transform: translateY(-3px); /* Moves icon up by 5px */
+
+}
+.footer-links-container {
+  margin-left: 8vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-links-text-beli {
+  font-family: 'Montserrat';
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 2vh;
+  transition: transform 0.3s ease; /* Smooth transition */
+
+}
+.navbar-links-text-beli:hover {
+  transform: translateY(-3px); /* Moves icon up by 5px */
+
+}
+.footer-links-container-2 {
+  margin-left: 8vw;
+  padding-top: 6.5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links-text-header {
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2vh;
+}
+.footer-shops-image {
+  height: 30px;
+  margin-right: 1.2vw;
+  margin-top: 3vh;
+  transition: transform 0.3s ease; /* Smooth transition */
+
+}
+
+.footer-shops-container{
+  margin-left: 17vw;
+}
+.footer-shops-image:hover {
+  transform: translateY(-5px); /* Moves icon up by 5px */
+}
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .testimonial-grid {
